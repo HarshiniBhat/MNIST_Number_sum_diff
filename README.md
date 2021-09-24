@@ -21,25 +21,8 @@ take 2 inputs:
 
 ## Downloading the data 
 
-```python
-# For training set 
-train_set = torchvision.datasets.MNIST(
-    root = './data', #creating directory and giving the path
-    train = True, # as we are downloading the training set
-    download = True,# True id the data is not present/available in local storage
-    transform = transforms.Compose([
-          transforms.ToTensor(), # converting image to tensor
-          transforms.Normalize((0.1307,),(0.3081,)) #Normalizing the image with mean and std deviation
-# For test set 
-test_set = torchvision.datasets.MNIST(
-    root = './data', #creating directory and giving the path
-    train = False, # as we are downloading the training set
-    download = True,# True id the data is not present/available in local storage
-    transform = transforms.Compose([
-          transforms.ToTensor(), # converting image to tensor
-          transforms.Normalize((0.1307,),(0.3081,)) #Normalizing the image with mean and std deviation
-```
-Downloading MNIST dataset from torchvision directory and storing it in train_set and test_set
+
+Downloading MNIST dataset from torchvision directory and storing it in train_set and test_set respectively.
 
   ## Defining a project class
 
@@ -64,25 +47,13 @@ The class is used to generate a random number and to
 give the input image from the dataset,it returns
 the image,label, number, sum, difference.
 ```python
+
  ## Using the defined class and creating an iterable object train_loader and test_loader
- rain_loader = torch.utils.data.DataLoader(
-    Project(train_set), batch_size=batch_size, shuffle=True, **kwargs
-)
-test_loader = torch.utils.data.DataLoader(
-    Project(test_set), batch_size=batch_size, shuffle=True, **kwargs
-)
+
 ```
  ## Visualising the data
 ```python
-cols, rows = 4,2
-figure = plt.figure(figsize = (10,8))
-for i in range(1,cols*rows +1): # for loop for number of elements in the final output
-  k = np.random.randint(0,batch_size) # to generate a random number within the batch_size
-
-  figure.add_subplot(rows, cols, i) # adding subplot for each image
-  plt.title(f" Label: {label[k].item()}, \nRandom number: {num[k].item()}, \nsum: {sum[k].item()}, diff: {diff[k].item()}")
-  plt.imshow(image[k].squeeze(), cmap = 'gray')
-  plt.axis('off')
+![](results.png)
 ```
 Visualising the image with its label and sum, difference
 ## Defining the network
