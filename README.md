@@ -163,8 +163,11 @@ for epoch in range(1, 20):
     test(model, device, test_loader)   
 ```
 we calculate the loss and evaluate the model.
-
-
-
+## Plotting graphs of loss function  for different networks with different learning rates
+![](network1.png)
+![](netwk 1a.png)
+![](ntk2a)
+![](ntk2b)
+![](netk2c)
 
   
