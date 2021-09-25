@@ -52,9 +52,8 @@ the image,label, number, sum, difference.
 
 ```
  ## Visualising the data
-```python
-![](results.png)
-```
+
+![](data.png)
 Visualising the image with its label and sum, difference
 ## Defining the network
 
