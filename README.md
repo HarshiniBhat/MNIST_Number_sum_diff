@@ -165,7 +165,8 @@ for epoch in range(1, 20):
 we calculate the loss and evaluate the model.
 ## Plotting graphs of loss function  for different networks with different learning rates
 ![](network1.png)
-
+![](https://github.com/HarshiniBhat/MNIST_Number_sum_diff/blob/main/netwk%201a.png)
+![](Netwrk2.png)
 ![](ntk2a.png)
 ![](ntk2b.png)
 ![](ntk2c.png)
