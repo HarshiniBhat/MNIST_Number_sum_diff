@@ -166,8 +166,8 @@ we calculate the loss and evaluate the model.
 ## Plotting graphs of loss function  for different networks with different learning rates
 ![](network1.png)
 
-![](ntk2a)
-![](ntk2b)
-![](ntk2c)
+![](ntk2a.png)
+![](ntk2b.png)
+![](ntk2c.png)
 
   
